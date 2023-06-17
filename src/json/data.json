@@ -1,0 +1,274 @@
+{
+    "restaurantData":[
+        {
+            "id":1,
+            "name":"A2B-Adayar Anandha Bhavan",
+            "cuisines":"South Indian,North Indian,Sweets,Chinese",
+            "rating":4.4,
+            "dtime":24,
+            "avgrate": "RS.300 for two",
+            "location":"Adayar"
+        },
+        {
+            "id":2,
+            "name":"Sangeetha Veg  Restaurant",
+            "cuisines":"Chinese, Indian, North Indian, South Indian",
+            "rating":4.5,
+            "dtime":22,
+            "avgrate": "RS.200 for two",
+            "location":"Egmore"
+            
+        },
+        {
+            "id":3,
+            "name":"Swamy Cafe",
+            "cuisines":"South Indian",
+            "rating":4.5,
+            "dtime":15,
+            "avgrate": "RS.200 for two",
+            "location":"Adambakkam"
+
+        },
+        {
+            "id":4,
+            "name":"Hotel Saravana Bhavan",
+            "cuisines":"South Indian,North Indian,Sweets",
+            "rating":4.3,
+            "dtime":45,
+            "avgrate": "RS.300 for two",
+            "location":"Ashok Nagar"
+
+        },
+
+        {
+            "id":5,
+            "name":"Namma Veedu Vasantha Bhavan",
+            "cuisines":"South Indian",
+            "rating":4.1,
+            "dtime":35,
+            "avgrate": "RS.350 for two",
+            "location":"Airport"
+            
+        },
+        {
+            "id":6,
+            "name":"Murugan Idly Shop",
+            "cuisines":"South Indian",
+            "rating":4.3,
+            "dtime":22,
+            "avgrate": "RS.350 for two",
+            "location":"Nanganallur"
+            
+        },
+        {
+            "id":7,
+            "name":"Anandha Hotel",
+            "cuisines":"South Indian,North Indian,Chinese",
+            "rating":4.3,
+            "dtime":27,
+            "avgrate": "RS.200 for two",
+            "location":"Madipakkam"
+
+            
+        },
+        {
+            "id":8,
+            "name":"Zaitoon",
+            "cuisines":"Biryani, Juices, North Indian, Chinese, Arabian, Mughlai",
+            "rating":4.2,
+            "dtime":28,
+            "avgrate": "RS.500 for two",
+            "location":"Maduravoyal"
+
+            
+        },
+                {
+            "id":9,
+            "name":"SS Hyderabad Biriyani",
+            "cuisines":"Biryani, North Indian",
+            "rating":4.4,
+            "dtime":39,
+            "avgrate": "RS.300 for two",
+            "location":"Ambathur"
+
+            
+        },
+        {
+            "id":10,
+            "name":"Juice Box Velachery",
+            "cuisines":"Juices, Beverages, Italian",
+            "rating":3.8,
+            "dtime":34,
+            "avgrate": "RS.150 for two",
+            "location":"Avadi"
+
+            
+        },
+        {
+            "id":11,
+            "name":"Pizza Hut",
+            "cuisines":"Pizzas",
+            "rating":3.9,
+            "dtime":28,
+            "avgrate": "RS.400 for two",
+            "location":"Aayapakam"
+
+            
+        },
+        {
+            "id":12,
+            "name":"Copper Kitchen",
+            "cuisines":"Biryani, Barbecue, Chettinad, Chinese",
+            "rating":4.1,
+            "dtime":17,
+            "avgrate": "RS.500 for two",
+            "location":"Medavakam"
+
+            
+        },
+        {
+            "id":13,
+            "name":"McDonald's",
+            "cuisines":"Burgers, Beverages, Cafe, Desserts",
+            "rating":4.3,
+            "dtime":42,
+            "avgrate": "RS.400 for two",
+            "location":"Perumbakam"
+
+            
+        },
+        {
+            "id":14,
+            "name":"Subway",
+            "cuisines":"Salads, Snacks, Desserts, Beverages",
+            "rating":3.7,
+            "dtime":47,
+            "avgrate": "RS.350 for two",
+            "location":"Anna Nagar"
+
+            
+        },
+        {
+            "id":15,
+            "name":"Geetham Veg Restaurant",
+            "cuisines":"Indian",
+            "rating":4.5,
+            "dtime":27,
+            "avgrate": "RS.250 for two",
+            "location":"Koyambedu"
+
+            
+        },
+        {
+            "id":16,
+            "name":"Wow! Momo",
+            "cuisines":"Tibetan, Healthy Food, Asian, Chinese, Snacks, Continental, Desserts, Beverages",
+            "rating":4.2,
+            "dtime":37,
+            "avgrate": "RS.300 for two",
+            "location":"Anna Nagar"
+
+            
+        },
+        {
+            "id":17,
+            "name":"Cake Zone",
+            "cuisines":"Bakery, Desserts, Sweets, Ice Cream",
+            "rating":4.1,
+            "dtime":20,
+            "avgrate": "RS.200 for two",
+            "location":"Nanganallur"
+
+            
+        },
+        {
+            "id":18,
+            "name":"Domino's Pizza",
+            "cuisines":"Pizzas, Italian, Pastas, Desserts",
+            "rating":4.3,
+            "dtime":25,
+            "avgrate": "RS.400 for two",
+            "location":"Ashok Nagar"
+
+            
+        },
+        {
+            "id":19,
+            "name":"Adayar Bakery",
+            "cuisines":"South Indian,North Indian,Sweets,Chinese",
+            "rating":4.4,
+            "dtime":30,
+            "avgrate": "RS.150 for two",
+            "location":"Avadi"
+
+            
+        },
+        {
+            "id":20,
+            "name":"Venkateshwara Boli Stall",
+            "cuisines":"Snacks Sweets",
+            "rating":4.2,
+            "dtime":23,
+            "avgrate": "RS.200 for two",
+            "location":"Airport"
+
+            
+        },
+        {
+            "id":21,
+            "name":"Moonlight Takeaway",
+            "cuisines":"North Indian, Chinese, Indian, Ice Cream, South Indian, Grill, Tandoor",
+            "rating":3.8,
+            "dtime":32,
+            "avgrate": "RS.250 for two",
+            "location":"Thambarm"
+
+            
+        },
+        {
+            "id":22,
+            "name":"Ganga Sweets",
+            "cuisines":"North Indian, South Indian, Sweets",
+            "rating":4.5,
+            "dtime":17,
+            "avgrate": "RS.250 for two",
+            "location":"Maduravoyal"
+
+            
+        },
+        {
+            "id":23,
+            "name":"Salem RR Biriyani Unavagam",
+            "cuisines":"Biryani, Chettinad, Tandoor, Chinese",
+            "rating":3.8,
+            "dtime":17,
+            "avgrate": "RS.400 for two",
+            "location":"Vada Palani"
+
+            
+        },
+        {
+            "id":24,
+            "name":"Manshuk's Sweet and Snacks",
+            "cuisines":"North Indian, Indian, Snacks, Sweets, Chaat",
+            "rating":4.2,
+            "dtime":32,
+            "avgrate": "RS.300 for two",
+            "location":"Nanganallur"
+
+            
+        },
+        {
+            "id":25,
+            "name":"ATTI Square",
+            "cuisines":"Middle Eastern",
+            "rating":3.7,
+            "dtime":16,
+            "avgrate": "RS.300 for two",
+            "location":"Adayar"
+
+            
+        }
+
+    ]
+}
