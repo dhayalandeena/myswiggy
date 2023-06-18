@@ -7,7 +7,8 @@
             "rating":4.4,
             "dtime":24,
             "avgrate": "RS.300 for two",
-            "location":"Adayar"
+            "location":"Adayar",
+            "image":"https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_508,h_320,c_fill/hhdz5tdapnsfvgqhjyac"
         },
         {
             "id":2,
@@ -16,7 +17,8 @@
             "rating":4.5,
             "dtime":22,
             "avgrate": "RS.200 for two",
-            "location":"Egmore"
+            "location":"Egmore",
+            "image":"https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_264,h_288,c_fill/dpcd0busd8jvj6urotka"
             
         },
         {
@@ -26,8 +28,9 @@
             "rating":4.5,
             "dtime":15,
             "avgrate": "RS.200 for two",
-            "location":"Adambakkam"
-
+            "location":"Adambakkam",
+            "image":"https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_264,h_288,c_fill/qmpmqzlnx5tjok1nuzai"
+  
         },
         {
             "id":4,
@@ -36,10 +39,11 @@
             "rating":4.3,
             "dtime":45,
             "avgrate": "RS.300 for two",
-            "location":"Ashok Nagar"
-
+            "location":"Ashok Nagar",
+            "image":"https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_508,h_320,c_fill/xntey9nuqlnqxcv0pfkc"
+  
         },
-
+  
         {
             "id":5,
             "name":"Namma Veedu Vasantha Bhavan",
@@ -47,7 +51,8 @@
             "rating":4.1,
             "dtime":35,
             "avgrate": "RS.350 for two",
-            "location":"Airport"
+            "location":"Airport",
+            "image":"https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_264,h_288,c_fill/ahelya9p0nfq61sbpw3r"
             
         },
         {
@@ -57,7 +62,8 @@
             "rating":4.3,
             "dtime":22,
             "avgrate": "RS.350 for two",
-            "location":"Nanganallur"
+            "location":"Nanganallur",
+            "image":"https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_264,h_288,c_fill/gve3spfhi2bnr8o4opai"
             
         },
         {
@@ -67,8 +73,9 @@
             "rating":4.3,
             "dtime":27,
             "avgrate": "RS.200 for two",
-            "location":"Madipakkam"
-
+            "location":"Madipakkam",
+            "image":"https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_264,h_288,c_fill/lt9zgdf4roldsjp18cb1"
+  
             
         },
         {
@@ -78,19 +85,20 @@
             "rating":4.2,
             "dtime":28,
             "avgrate": "RS.500 for two",
-            "location":"Maduravoyal"
-
+            "location":"Maduravoyal",
+            "image":"https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_264,h_288,c_fill/dhhxpnn5rt2uysasbzqq"
+  
             
         },
-                {
+        {
             "id":9,
             "name":"SS Hyderabad Biriyani",
             "cuisines":"Biryani, North Indian",
             "rating":4.4,
             "dtime":39,
             "avgrate": "RS.300 for two",
-            "location":"Ambathur"
-
+            "location":"Ambathur",
+            "image":"https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_264,h_288,c_fill/zcjmgh45l3eiipquzcmv"
             
         },
         {
@@ -100,8 +108,9 @@
             "rating":3.8,
             "dtime":34,
             "avgrate": "RS.150 for two",
-            "location":"Avadi"
-
+            "location":"Avadi",
+            "image":"https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_264,h_288,c_fill/iteb8xc3g04pjmirsck6"
+  
             
         },
         {
@@ -111,8 +120,9 @@
             "rating":3.9,
             "dtime":28,
             "avgrate": "RS.400 for two",
-            "location":"Aayapakam"
-
+            "location":"Aayapakam",
+            "image":"https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_508,h_320,c_fill/kobhy6geiyacvkpcrzx8"
+  
             
         },
         {
@@ -122,8 +132,9 @@
             "rating":4.1,
             "dtime":17,
             "avgrate": "RS.500 for two",
-            "location":"Medavakam"
-
+            "location":"Medavakam",
+            "image":"https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_508,h_320,c_fill/o39lepu4xti5nyjhauor"
+  
             
         },
         {
@@ -133,8 +144,9 @@
             "rating":4.3,
             "dtime":42,
             "avgrate": "RS.400 for two",
-            "location":"Perumbakam"
-
+            "location":"Perumbakam",
+            "image":"https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_508,h_320,c_fill/ee5f8e06b300efc07c9fe3f4df40dfc4"
+  
             
         },
         {
@@ -144,8 +156,9 @@
             "rating":3.7,
             "dtime":47,
             "avgrate": "RS.350 for two",
-            "location":"Anna Nagar"
-
+            "location":"Anna Nagar",
+            "image":"https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_264,h_288,c_fill/0bf19a82b109b40c2f5c56d00f071a33"
+  
             
         },
         {
@@ -155,8 +168,8 @@
             "rating":4.5,
             "dtime":27,
             "avgrate": "RS.250 for two",
-            "location":"Koyambedu"
-
+            "location":"Koyambedu",
+            "image":"https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_508,h_320,c_fill/ukjks4pkgniuxolng0t7"
             
         },
         {
@@ -166,8 +179,9 @@
             "rating":4.2,
             "dtime":37,
             "avgrate": "RS.300 for two",
-            "location":"Anna Nagar"
-
+            "location":"Anna Nagar",
+            "image":"https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_508,h_320,c_fill/90ac3da2963978f866177263fba805a7"
+  
             
         },
         {
@@ -177,8 +191,9 @@
             "rating":4.1,
             "dtime":20,
             "avgrate": "RS.200 for two",
-            "location":"Nanganallur"
-
+            "location":"Nanganallur",
+            "image":"https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_508,h_320,c_fill/hqcghvsxz8zp0gzaqjpa"
+  
             
         },
         {
@@ -188,8 +203,9 @@
             "rating":4.3,
             "dtime":25,
             "avgrate": "RS.400 for two",
-            "location":"Ashok Nagar"
-
+            "location":"Ashok Nagar",
+            "image":"https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_508,h_320,c_fill/pbkivrzhoanyit1pebxt"
+  
             
         },
         {
@@ -199,8 +215,9 @@
             "rating":4.4,
             "dtime":30,
             "avgrate": "RS.150 for two",
-            "location":"Avadi"
-
+            "location":"Avadi",
+            "image":"https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_508,h_320,c_fill/fwdssyxtdtda60sqxkou"
+  
             
         },
         {
@@ -210,8 +227,9 @@
             "rating":4.2,
             "dtime":23,
             "avgrate": "RS.200 for two",
-            "location":"Airport"
-
+            "location":"Airport",
+            "image":"https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_264,h_288,c_fill/kugnit5gc0cewvebjhlm"
+  
             
         },
         {
@@ -221,8 +239,9 @@
             "rating":3.8,
             "dtime":32,
             "avgrate": "RS.250 for two",
-            "location":"Thambarm"
-
+            "location":"Thambarm",
+            "image":"https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_264,h_288,c_fill/cfggd8kxpyentvj4jh6x"
+  
             
         },
         {
@@ -232,8 +251,9 @@
             "rating":4.5,
             "dtime":17,
             "avgrate": "RS.250 for two",
-            "location":"Maduravoyal"
-
+            "location":"Maduravoyal",
+            "image":"https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_264,h_288,c_fill/dzklfnosz2id0tmwqll2"
+  
             
         },
         {
@@ -243,8 +263,9 @@
             "rating":3.8,
             "dtime":17,
             "avgrate": "RS.400 for two",
-            "location":"Vada Palani"
-
+            "location":"Vada Palani",
+            "image":"https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_508,h_320,c_fill/lmaqiwy39dleyfadfmnn"
+  
             
         },
         {
@@ -254,8 +275,9 @@
             "rating":4.2,
             "dtime":32,
             "avgrate": "RS.300 for two",
-            "location":"Nanganallur"
-
+            "location":"Nanganallur",
+            "image":"https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_264,h_288,c_fill/uiablnhjdzeht35jklgg"
+  
             
         },
         {
@@ -265,10 +287,11 @@
             "rating":3.7,
             "dtime":16,
             "avgrate": "RS.300 for two",
-            "location":"Adayar"
-
+            "location":"Adayar",
+            "image":"https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_264,h_288,c_fill/u3yaqnepzriv0qhddlsn"
+  
             
         }
-
+  
     ]
-}
+  }
