@@ -42,7 +42,7 @@
 }
 .res4{
     height: 170px;
-    width: 100%;
+    width: 100;
 }
 .hname{
     font-size: 17px;
@@ -83,15 +83,12 @@
 ._star{
     font-size: 10px;
     margin-right: 4px;
-    position: relative;
-    top: -1px;
     
 }
 .star{
     height: 15px;
     width: 15px;
-   
-    color: #fff;
+   color: #fff;
 }
 
 .view{
