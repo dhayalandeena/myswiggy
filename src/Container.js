@@ -1,16 +1,4 @@
-<<<<<<< HEAD
-import React from 'react'
 
-function Container() {
-  return (
-   <>
-     <div ></div>
-   </>
-  )
-}
-
-export default Container;
-=======
 import React, { useEffect, useState } from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faStar } from '@fortawesome/free-solid-svg-icons';
@@ -78,4 +66,3 @@ function Container() {
 }
 
 export default Container;
->>>>>>> 295c83ca1503390b808786daa69d96eebdedf433

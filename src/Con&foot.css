@@ -1,8 +1,9 @@
 
 .container{
    
-    width: 1280px;
+    width: 1260px;
     background-color: #fff;
+ 
    
 }
 .top{
@@ -12,6 +13,7 @@
     padding-left: 10px;
     padding-right: 10px;
     background-color: #fff;
+    box-sizing: border-box;
     display: grid;
     grid-template-columns: auto auto auto auto;
     justify-content: space-between;
@@ -131,4 +133,176 @@
     border-radius: 25px;
     color: #fff;
     background-color: #b7b8bc;
+}
+/* ----------------------------- */
+.footer{
+    padding:20px;
+    background-color: #000;
+    height: 380px;
+    width: 1260px;
+    display: flex;
+    border-bottom:1px solid rgb(213, 204, 204);
+    box-sizing: border-box;
+
+    
+} 
+
+.company{
+    margin-left: 10px;
+    height: 100%;
+    width: 300px;
+}
+.compan{
+    height: 100%;
+    width: 400px;
+    margin-left: 10px;
+    margin-bottom: 20px;
+}
+.contact{
+    
+    height: 100%;
+    width: 300px;
+}
+.legal{
+   
+    height: 100%;
+    width: 400px;
+}.comp{
+    color: rgb(253, 253, 253);
+    cursor: pointer;
+    margin-top: 10px;
+}
+.comp:hover{
+    color: white;
+    font-weight: 600;
+}
+.foothead{
+    color:gray;
+    font-weight: 600;
+    margin-bottom: 30px;
+    
+}
+.comp1{
+    color: white;
+    font-weight: 400;
+}
+.apple{
+    color:#fff;
+    height: 50px;
+    width: 50px;
+    position: relative;
+    right: 10px;
+}
+.plystr{
+    color:white;
+    height: 40px;
+    width: 40px;
+    position: relative;
+    right: 10px;
+}
+.store{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60px;
+    width: 200px;
+    border: 1px solid #fff;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+.store:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+}
+.appstr{
+    color: #fff;
+    font-size: large;
+    font-weight: 600;
+}
+.upp{
+    position: relative;
+    bottom: 5px;
+   
+}
+.foothead1{
+    height: auto;
+    width: 1260px; 
+    padding: 20px;
+    box-sizing: border-box;
+    background-color: #000;padding: 10px;
+    
+}
+.compan{
+    height: 100%;
+    width: 400px;
+}
+.tit{
+    width: 100%;
+}
+.footericon{
+
+    height: 120px;
+    width: 1260px;
+    background-color: #000;
+    border-top:1px solid #e9e9eb ;
+    box-sizing: border-box;
+    padding-right: 20px;
+    padding-left: 20px;
+}
+.footer_icon{
+   
+  
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-around;
+    position: relative;
+    top: 35px;
+  
+}
+.swiggyicon{
+    
+     width: 33.3%;
+     color: #fff;
+     display: flex;
+     justify-content:start;
+     align-items: center;
+     box-sizing: border-box;
+     cursor: pointer;
+   
+}
+.year{
+    width: 33.3%;
+    font-size: medium;
+    font-weight: 600;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.socialicon{
+    width: 33.3%;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+}
+._icon{
+    color:white;
+    height: 30px;
+    width: 30px;
+    position: relative;
+    right: 10px;
+    padding-right: 20px;
+}
+._swiggyicon{
+    color:white;
+    height: 50px;
+    width: 50px;
+}
+.swiggyname{
+    font-size: larger;
+    font-weight: 700;
+}
+._icon:hover{
+    transform: scale(1.2);
+    cursor: pointer;
 }
