@@ -38,8 +38,7 @@ const Offers = () => {
 
 const handleCuisines=(e,ele)=>
 {
-offer.filter((element,ind)=>console.log("eeee",element.cuisinesArray))
-//https://stackoverflow.com/questions/73786887/filter-array-for-objects-with-nested-array-that-contains-a-specific-string
+// offer.filter((element,ind)=>console.log("eeee",element.cuisinesArray))
 
 }
 
