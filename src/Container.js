@@ -35,8 +35,8 @@ function Container() {
                                         <div className='cuisine'>{d.cuisines}</div>
                                     </div>
                                     <div class="icons">
-                                        <div class="_str _str1">
-                                            <span class="_star">
+                                        <div class="_str  " style={{backgroundColor: d.rating < 4 ? "red" : "#48c479"}}>
+                                        <span class="_star" >
                                                 <FontAwesomeIcon icon={faStar} className='star' />
                                             </span>
                                             <span>{d.rating}</span>
