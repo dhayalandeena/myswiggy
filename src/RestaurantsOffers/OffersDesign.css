@@ -18,6 +18,7 @@
 
 }
 
+
 .offer-img img
 {
   width: 100%;
@@ -59,7 +60,7 @@
     margin: 8px 0px 0px 0px;
 }
 
-.star-icon{
+  .star-icon{
 display: flex;
 }
 
@@ -203,5 +204,21 @@ display: flex;
 
   
   * {
-    box-sizing: border-box;
-  }
+  box-sizing: border-box;
+}
+/* ------- */
+.offer-column:hover{
+  transform: scale(1.1);
+  cursor:pointer;
+}
+
+
+/* .serchbrletter:focus{
+  border: none;
+  width: 145%;
+  background-color: rgb(240, 240, 245);
+} */
+input:focus{
+  outline: none;
+}
+/* ------------------- */

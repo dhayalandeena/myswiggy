@@ -10,7 +10,9 @@
             "location":"Adayar",
             "image":"https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_508,h_320,c_fill/hhdz5tdapnsfvgqhjyac",
             "offerRange":"40% OFF UPTO ₹80",
-            "cuisinesArray":["South Indian","North Indian","Sweets","Chinese"]
+            "cuisinesArray":["South Indian","North Indian","Sweets","Chinese"],
+            "vegORnonveg":"pureveg",
+            "fortwopepole":300
         },
         {
             "id":2,
@@ -22,7 +24,9 @@
             "location":"Egmore",
             "image":"https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_264,h_288,c_fill/dpcd0busd8jvj6urotka",
             "offerRange":"25% OFF UPTO ₹65",
-            "cuisinesArray":["Chinese", "Indian", "North Indian", "South Indian"]
+            "cuisinesArray":["Chinese", "Indian", "North Indian", "South Indian"],
+            "vegORnonveg":"pureveg",
+            "fortwopepole":200
         },
         {
             "id":3,
@@ -34,7 +38,9 @@
             "location":"Adambakkam",
             "image":"https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_264,h_288,c_fill/qmpmqzlnx5tjok1nuzai",
             "offerRange":"25% OFF UPTO ₹50",
-            "cuisinesArray":["South Indian"]
+            "cuisinesArray":["South Indian"],
+            "vegORnonveg":"pureveg",
+            "fortwopepole":200
         },
         {
             "id":4,
@@ -46,7 +52,9 @@
             "location":"Ashok Nagar",
             "image":"https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_508,h_320,c_fill/xntey9nuqlnqxcv0pfkc",
             "offerRange":"25% OFF UPTO ₹50",
-            "cuisinesArray":["South Indian","North Indian","Sweets"]
+            "cuisinesArray":["South Indian","North Indian","Sweets"],
+            "vegORnonveg":"pureveg",
+            "fortwopepole":300
       },
   
         {
@@ -59,7 +67,9 @@
             "location":"Airport",
             "image":"https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_264,h_288,c_fill/ahelya9p0nfq61sbpw3r",
             "offerRange":"30% OFF UPTO ₹75",
-            "cuisinesArray":["South Indian"]
+            "cuisinesArray":["South Indian"],
+            "vegORnonveg":"pureveg",
+            "fortwopepole":350
         },
         {
             "id":6,
@@ -71,7 +81,9 @@
             "location":"Nanganallur",
             "image":"https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_264,h_288,c_fill/gve3spfhi2bnr8o4opai",
             "offerRange":"25% OFF UPTO ₹65",
-            "cuisinesArray":["South Indian"]
+            "cuisinesArray":["South Indian"],
+            "vegORnonveg":"pureveg",
+            "fortwopepole":350
         },
         {
             "id":7,
@@ -83,7 +95,9 @@
             "location":"Madipakkam",
             "image":"https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_264,h_288,c_fill/lt9zgdf4roldsjp18cb1",
             "offerRange":"50% OFF UPTO ₹100",
-            "cuisinesArray":["South Indian","North Indian","Chinese"]
+            "cuisinesArray":["South Indian","North Indian","Chinese"],
+            "vegORnonveg":"Nonveg",
+            "fortwopepole":200
         },
         {
             "id":8,
@@ -95,7 +109,9 @@
             "location":"Maduravoyal",
             "image":"https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_264,h_288,c_fill/dhhxpnn5rt2uysasbzqq",
             "offerRange":"20% OFF UPTO ₹50",
-            "cuisinesArray":["Biryani","Juices","North Indian","Chinese","Arabian", "Mughlai"]
+            "cuisinesArray":["Biryani","Juices","North Indian","Chinese","Arabian", "Mughlai"],
+            "vegORnonveg":"Nonveg",
+            "fortwopepole":500
         },
         {
             "id":9,
@@ -107,7 +123,9 @@
             "location":"Ambathur",
             "image":"https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_264,h_288,c_fill/zcjmgh45l3eiipquzcmv",
             "offerRange":"50% OFF UPTO ₹120",
-            "cuisinesArray":["Biryani","North Indian"]
+            "cuisinesArray":["Biryani","North Indian"],
+            "vegORnonveg":"Nonveg",
+            "fortwopepole":300
         },
         {
             "id":10,
@@ -119,7 +137,9 @@
             "location":"Avadi",
             "image":"https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_264,h_288,c_fill/iteb8xc3g04pjmirsck6",
             "offerRange":"30% OFF UPTO ₹75",
-            "cuisinesArray":["Juices","Beverages","Italian"]
+            "cuisinesArray":["Juices","Beverages","Italian"],
+            "vegORnonveg":"Nonveg",
+            "fortwopepole":150
         },
         {
             "id":11,
@@ -131,7 +151,9 @@
             "location":"Aayapakam",
             "image":"https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_508,h_320,c_fill/kobhy6geiyacvkpcrzx8",
             "offerRange":"40% OFF UPTO ₹100",
-            "cuisinesArray":["Pizzas"]
+            "cuisinesArray":["Pizzas"],
+            "vegORnonveg":"Nonveg",
+            "fortwopepole":400
         },
         {
             "id":12,
@@ -143,7 +165,9 @@
             "location":"Medavakam",
             "image":"https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_508,h_320,c_fill/o39lepu4xti5nyjhauor",
             "offerRange":"20% OFF UPTO ₹50",
-            "cuisinesArray":["Biryani","Barbecue","Chettinad","Chinese"]
+            "cuisinesArray":["Biryani","Barbecue","Chettinad","Chinese"],
+            "vegORnonveg":"Nonveg",
+            "fortwopepole":500
         },
         {
             "id":13,
@@ -155,7 +179,9 @@
             "location":"Perumbakam",
             "image":"https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_508,h_320,c_fill/ee5f8e06b300efc07c9fe3f4df40dfc4",
             "offerRange":"40% OFF UPTO ₹80",
-            "cuisinesArray":["Burgers","Beverages","Cafe","Desserts"]
+            "cuisinesArray":["Burgers","Beverages","Cafe","Desserts"],
+            "vegORnonveg":"Nonveg",
+            "fortwopepole":400
         },
         {
             "id":14,
@@ -167,7 +193,9 @@
             "location":"Anna Nagar",
             "image":"https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_264,h_288,c_fill/0bf19a82b109b40c2f5c56d00f071a33",
             "offerRange":"25% OFF UPTO ₹65",
-            "cuisinesArray":["Salads","Snacks","Desserts","Beverages"]
+            "cuisinesArray":["Salads","Snacks","Desserts","Beverages"],
+            "vegORnonveg":"Nonveg",
+            "fortwopepole":350
         },
         {
             "id":15,
@@ -179,7 +207,9 @@
             "location":"Koyambedu",
             "image":"https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_508,h_320,c_fill/ukjks4pkgniuxolng0t7",
             "offerRange":"20% OFF UPTO ₹50",
-            "cuisinesArray":["Indian"]
+            "cuisinesArray":["Indian"],
+            "vegORnonveg":"pureveg",
+            "fortwopepole":250
         },
         {
             "id":16,
@@ -191,7 +221,9 @@
             "location":"Anna Nagar",
             "image":"https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_508,h_320,c_fill/90ac3da2963978f866177263fba805a7",
             "offerRange":"20% OFF UPTO ₹50",
-            "cuisinesArray":["Tibetan", "Healthy Food","Asian","Chinese","Snacks","Continental","Desserts","Beverages"]
+            "cuisinesArray":["Tibetan", "Healthy Food","Asian","Chinese","Snacks","Continental","Desserts","Beverages"],
+            "vegORnonveg":"Nonveg",
+            "fortwopepole":300
         },
         {
             "id":17,
@@ -203,7 +235,9 @@
             "location":"Nanganallur",
             "image":"https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_508,h_320,c_fill/hqcghvsxz8zp0gzaqjpa",
             "offerRange":"10% OFF UPTO ₹75",
-            "cuisinesArray":["Bakery","Desserts","Sweets","Ice Cream"]
+            "cuisinesArray":["Bakery","Desserts","Sweets","Ice Cream"],
+            "vegORnonveg":"Nonveg",
+            "fortwopepole":200
         },
         {
             "id":18,
@@ -215,7 +249,9 @@
             "location":"Ashok Nagar",
             "image":"https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_508,h_320,c_fill/pbkivrzhoanyit1pebxt",
             "offerRange":"15% OFF UPTO ₹75",
-            "cuisinesArray":["Pizzas","Italian","Pastas","Desserts"]
+            "cuisinesArray":["Pizzas","Italian","Pastas","Desserts"],
+            "vegORnonveg":"Nonveg",
+            "fortwopepole":400
         },
         {
             "id":19,
@@ -227,7 +263,9 @@
             "location":"Avadi",
             "image":"https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_508,h_320,c_fill/fwdssyxtdtda60sqxkou",
             "offerRange":"15% OFF UPTO ₹100",
-            "cuisinesArray":["South Indian","North Indian","Sweets","Chinese"]
+            "cuisinesArray":["South Indian","North Indian","Sweets","Chinese"],
+            "vegORnonveg":"Nonveg",
+            "fortwopepole":150
         },
         {
             "id":20,
@@ -239,7 +277,9 @@
             "location":"Airport",
             "image":"https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_264,h_288,c_fill/kugnit5gc0cewvebjhlm",
             "offerRange":"15% OFF UPTO ₹200",
-            "cuisinesArray":["Snacks Sweets"]
+            "cuisinesArray":["Snacks Sweets"],
+            "vegORnonveg":"Nonveg",
+            "fortwopepole":200
         },
         {
             "id":21,
@@ -251,7 +291,9 @@
             "location":"Thambarm",
             "image":"https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_264,h_288,c_fill/cfggd8kxpyentvj4jh6x",
             "offerRange":"40% OFF UPTO ₹75",
-            "cuisinesArray":["North Indian","Chinese","Indian","Ice Cream","South Indian","Grill","Tandoor"]
+            "cuisinesArray":["North Indian","Chinese","Indian","Ice Cream","South Indian","Grill","Tandoor"],
+            "vegORnonveg":"Nonveg",
+            "fortwopepole":250
         },
         {
             "id":22,
@@ -263,7 +305,9 @@
             "location":"Maduravoyal",
             "image":"https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_264,h_288,c_fill/dzklfnosz2id0tmwqll2",
             "offerRange":"15% OFF UPTO ₹45",
-            "cuisinesArray":["North Indian","South Indian","Sweets"]
+            "cuisinesArray":["North Indian","South Indian","Sweets"],
+            "vegORnonveg":"pureveg",
+            "fortwopepole":250
         },
         {
             "id":23,
@@ -275,7 +319,9 @@
             "location":"Vada Palani",
             "image":"https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_508,h_320,c_fill/lmaqiwy39dleyfadfmnn",
             "offerRange":"50% OFF UPTO ₹75",
-            "cuisinesArray":["Biryani","Chettinad","Tandoor","Chinese"]
+            "cuisinesArray":["Biryani","Chettinad","Tandoor","Chinese"],
+            "vegORnonveg":"Nonveg",
+            "fortwopepole":400
         },
         {
             "id":24,
@@ -287,7 +333,9 @@
             "location":"Nanganallur",
             "image":"https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_264,h_288,c_fill/uiablnhjdzeht35jklgg",
             "offerRange":"25% OFF UPTO ₹75",
-            "cuisinesArray":["North Indian","Indian","Snacks","Sweets","Chaat"]
+            "cuisinesArray":["North Indian","Indian","Snacks","Sweets","Chaat"],
+            "vegORnonveg":"pureveg",
+            "fortwopepole":300
         },
         {
             "id":25,
@@ -299,7 +347,9 @@
             "location":"Adayar",
             "image":"https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_264,h_288,c_fill/u3yaqnepzriv0qhddlsn",
             "offerRange":"30% OFF UPTO ₹75",
-            "cuisinesArray":["Middle Eastern"]
+            "cuisinesArray":["Middle Eastern"],
+            "vegORnonveg":"Nonveg",
+            "fortwopepole":300
         }
   
     ],
