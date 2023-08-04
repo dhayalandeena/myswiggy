@@ -1,10 +1,14 @@
 import React from 'react'
-import './Con&foot.css';
+// import './Con&foot.css';
+
+import './Header/Container.css'
+
 import { FaApple, FaGooglePlay, FaTwitter, FaFacebookF, FaInstagram, FaPinterest } from "react-icons/fa";
 import { SiSwiggy } from "react-icons/si";
 function Footer() {
     return (
         <>
+        <section>
             <div className="footer">
                 <div className="company">
                     <div className="foothead">COMPANY</div>
@@ -61,7 +65,7 @@ function Footer() {
                         <div className="comp">Aadityapur</div>
                         <div className="comp">Adoni</div>
                         <div className="comp">Agartala</div>
-                        <div className="comp">Agra</div>
+                        {/* <div className="comp">Agra</div>
                         <div className="comp">Ahmedabad</div>
                         <div className="comp">Ahmednagar</div>
                         <div className="comp">Aizawal</div>
@@ -83,7 +87,7 @@ function Footer() {
                         <div className="comp">Anand</div>
                         <div className="comp">Anantapur</div>
                         <div className="comp">Ankleshwar</div>
-                        <div className="comp">Aarakkonam</div>
+                        <div className="comp">Aarakkonam</div> */}
                     </div>
                     <div className="compan">
                         <div className="comp">Dehradun</div>
@@ -91,7 +95,7 @@ function Footer() {
                         <div className="comp">Delhi</div>
                         <div className="comp">Deoghar</div>
                         <div className="comp">Deoria-City</div>
-                        <div className="comp">Dewas</div>
+                        {/* <div className="comp">Dewas</div>
                         <div className="comp">Dhanbad</div>
                         <div className="comp">Dhar</div>
                         <div className="comp">Dharmashala</div>
@@ -113,7 +117,7 @@ function Footer() {
                         <div className="comp">Eluru</div>
                         <div className="comp">Erode</div>
                         <div className="comp">Etah</div>
-                        <div className="comp">Etawah</div>
+                        <div className="comp">Etawah</div> */}
                     </div>
                     <div className="compan">
                         <div className="comp">Kharagpur</div>
@@ -121,7 +125,7 @@ function Footer() {
                         <div className="comp">Kishangarh</div>
                         <div className="comp">Kochi</div>
                         <div className="comp">Kodaikanal</div>
-                        <div className="comp">Kohima</div>
+                        {/* <div className="comp">Kohima</div>
                         <div className="comp">Kokrajhar</div>
                         <div className="comp">Kolar</div>
                         <div className="comp">Kolhapur</div>
@@ -143,7 +147,7 @@ function Footer() {
                         <div className="comp">Kushalnagar</div>
                         <div className="comp">Lakhimpur</div>
                         <div className="comp">Lalitpur</div>
-                        <div className="comp">Latar</div>
+                        <div className="comp">Latar</div> */}
                     </div>
                     <div className="compan">
                         <div className="comp">Pusad</div>
@@ -151,7 +155,7 @@ function Footer() {
                         <div className="comp">Rae-Bareli</div>
                         <div className="comp">Raghunathpur</div>
                         <div className="comp">Raichur</div>
-                        <div className="comp">Raigani</div>
+                        {/* <div className="comp">Raigani</div>
                         <div className="comp">Rraigarh</div>
                         <div className="comp">Raipur</div>
                         <div className="comp">Rajahmundry</div>
@@ -173,7 +177,7 @@ function Footer() {
                         <div className="comp">Raniganj</div>
                         <div className="comp">Ratlam</div>
                         <div className="comp">Ratnagiri</div>
-                        <div className="comp">Ravulapalem</div>
+                        <div className="comp">Ravulapalem</div> */}
                     </div>
                 </div>
             </div>
@@ -196,7 +200,7 @@ function Footer() {
                 </div>
 
             </div>
-
+            </section>
 
         </>
     )

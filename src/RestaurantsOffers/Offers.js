@@ -3,8 +3,9 @@ import axios from "axios";
 import "./OffersDesign.css";
 import "./offerpage.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { useNavigate } from "react-router-dom";
+import { useNavigate,Link } from "react-router-dom";
 import { faStar, faChevronDown } from "@fortawesome/free-solid-svg-icons";
+import SearchRoundedIcon from '@mui/icons-material/SearchRounded';
 
 const Offers = () => {
   const navigate = useNavigate();
@@ -14,8 +15,10 @@ const Offers = () => {
   const [noOfCuisineToShow, setNoOfCuisineToShow] = useState(11);
   const [filterDataShow, setFilterDataShow] = useState(12);
   const [search, setSearch] = useState("");
+  const[check,setCheck]=useState(false)
   const [dd, setDd] = useState([]);
 
+  
   const fetchData = async () => {
     await axios
       .get("http://localhost:3000/restaurantData")
@@ -41,18 +44,20 @@ const Offers = () => {
   const handleShowMore = () => {
     setNoOfCuisineToShow((prevState) => prevState + 12);
   };
+ 
 
-  const handleCuisines = (e, cuisine) => {
-    const dd = offer.filter((ee) => {
-      return ee.cuisines
-        .split(",")
-        .map((item) => item.trim())
-        .includes(cuisine);
+  const handleCuisines = (cuisine) => {
+
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth'
     });
-    // {return(ee.cuisines.split(',').map(item=>item.trim()).includes(ele))}
-    // const res=dd.filter((ee)=>ee.includes(ele))
-    navigate(`/filtered/${cuisine}`);
+   
+    updPreDefinedCuisine(cuisine)
+
+    // navigate(`/filtered/${cuisine}`);
   };
+
   const singleResta = (id) => {
     navigate(`/restaurant/${id}`);
   };
@@ -74,6 +79,8 @@ const Offers = () => {
   const [hoveroffer, sethoveroffer] = useState("");
   const [hoverratefortwo, sethoverratefortwo] = useState("");
   const [hovercuisines, sethovercuisines] = useState("");
+
+  const[preDefinedCuisine,updPreDefinedCuisine]=useState("");
 
   const cuisinesselect = (event) => {
     sethovercuisines(event.target.value);
@@ -111,129 +118,179 @@ const Offers = () => {
     let updatedlist = offer.map((ele) => ele);
 
     if (selectoffers) {
+              if(check==true)
+              {
+                updPreDefinedCuisine('')
+
+
+              }
+              // setCheck(false)
       updatedlist = updatedlist.sort(
         (a, b) => parseFloat(b.offerRange) - parseFloat(a.offerRange)
       );
     }
 
     if (selectfastdelivery) {
+      updPreDefinedCuisine('')
+
       updatedlist = updatedlist.sort(
         (a, b) => parseFloat(a.dtime) - parseFloat(b.dtime)
       );
+    
     }
 
     if (selectrating) {
+      updPreDefinedCuisine('')
+
       updatedlist = updatedlist.sort(
         (a, b) => parseFloat(b.rating) - parseFloat(a.rating)
       );
     }
 
     if (selectpureveg) {
+      updPreDefinedCuisine('')
+
       updatedlist = updatedlist.filter((ele) => {
         return ele.vegORnonveg === "pureveg";
       });
     }
 
     if (selectmediumrate) {
+      updPreDefinedCuisine('')
+
       updatedlist = updatedlist.filter((ele) => {
         return ele.fortwopepole >= 300;
       });
     }
 
     if (selectlowprice) {
+      updPreDefinedCuisine('')
+
       updatedlist = updatedlist.filter((ele) => {
         return ele.fortwopepole < 300;
       });
     }
 
     if (sorthoverratio === "sortbyoption2") {
+      updPreDefinedCuisine('')
+
       updatedlist = updatedlist.sort(
         (a, b) => parseFloat(a.dtime) - parseFloat(b.dtime)
       );
     }
 
     if (sorthoverratio === "sortbyoption3") {
+      updPreDefinedCuisine('')
+
       updatedlist = updatedlist.sort(
         (a, b) => parseFloat(b.rating) - parseFloat(a.rating)
       );
     }
 
     if (sorthoverratio === "sortbyoption4") {
+      updPreDefinedCuisine('')
+
       updatedlist = updatedlist.sort(
         (a, b) => parseFloat(a.fortwopepole) - parseFloat(b.fortwopepole)
       );
     }
 
     if (sorthoverratio === "sortbyoption5") {
+      updPreDefinedCuisine('')
+
       updatedlist = updatedlist.sort(
         (a, b) => parseFloat(b.fortwopepole) - parseFloat(a.fortwopepole)
       );
     }
 
     if (fastdelveryratio === "timeoption") {
+      updPreDefinedCuisine('')
+
       updatedlist = updatedlist.sort(
         (a, b) => parseFloat(a.dtime) - parseFloat(b.dtime)
       );
     }
 
     if (swiggyarived === "newswiggy") {
+      updPreDefinedCuisine('')
+
       updatedlist = updatedlist.filter((ele) => {
         return ele.location === "Adayar";
       });
     }
     if (swiggyarived === "exswiggy") {
+      updPreDefinedCuisine('')
+
       updatedlist = updatedlist.filter((ele) => {
         return ele.location === "Avadi";
       });
     }
 
     if (ratinghoverdata === "rating1") {
+      updPreDefinedCuisine('')
+
       updatedlist = updatedlist.filter((ele) => {
         return ele.rating === 4.5;
       });
     }
 
     if (ratinghoverdata === "rating2") {
+      updPreDefinedCuisine('')
+
       updatedlist = updatedlist.filter((ele) => {
         return ele.rating === 4.1;
       });
     }
 
     if (ratinghoverdata === "rating3") {
+      updPreDefinedCuisine('')
+
       updatedlist = updatedlist.filter((ele) => {
         return ele.rating === 3.7;
       });
     }
 
     if (vegornonveghoverdata === "pureveg1") {
+      updPreDefinedCuisine('')
+
       updatedlist = updatedlist.filter((ele) => {
         return ele.vegORnonveg === "pureveg";
       });
     }
     if (vegornonveghoverdata === "nonveg2") {
+      updPreDefinedCuisine('')
+
       updatedlist = updatedlist.filter((ele) => {
         return ele.vegORnonveg === "Nonveg";
       });
     }
 
     if (hoveroffer === "hoveroffer1") {
+      updPreDefinedCuisine('')
+
       updatedlist = updatedlist.sort(
         (a, b) => parseFloat(b.offerRange) - parseFloat(a.offerRange)
       );
     }
 
     if (hoverratefortwo === "rate1") {
+      updPreDefinedCuisine('')
+
       updatedlist = updatedlist.filter((ele) => {
         return ele.fortwopepole >= 300;
       });
     }
     if (hoverratefortwo === "rate2") {
+      updPreDefinedCuisine('')
+
       updatedlist = updatedlist.filter((ele) => {
         return ele.fortwopepole < 300;
       });
     }
 
     if (hovercuisines) {
+      updPreDefinedCuisine('')
+
       updatedlist = updatedlist.filter((ele) => {
         return ele.cuisines
           .split(",")
@@ -242,12 +299,56 @@ const Offers = () => {
       });
     }
 
+    
+    
+
+      
+    if(preDefinedCuisine){
+      updatedlist = updatedlist.filter((ele) => {
+        return ele.cuisines
+          .split(",")
+          .map((item) => item.trim())
+          .includes(preDefinedCuisine);
+          
+      }
+      
+      );
+      
+      
+      }
+      
+      
+      // setCheck(updatedlist)
+      // console.log("check")
+      // console.log(updatedlist)
+      // if(check.length==0)
+      // {
+      //   // setCheck(updatedlist)
+      //   // setTemparry(updatedlist);
+      //   console.log("if uopdat",updatedlist)
+      // }
+      if(preDefinedCuisine !=='' && updatedlist.length ==0){
+      
+        setCheck(true)
+        setselectofers(false)
+        // console.log("if part")      
+      }
+     else{
+      setCheck(false)
+      // setselectofers(true)
+      // console.log("else part")
+     }
+      
     setTemparry(updatedlist);
     setfilter(false);
-  };
+
+  }
+
+  
 
   useEffect(() => {
     applayfilter();
+    // console.log("fffff dddd useeeffect",selectfastdelivery)
   }, [
     offer,
     selectoffers,
@@ -257,6 +358,7 @@ const Offers = () => {
     selectmediumrate,
     selectlowprice,
     sorthoverratio,
+    preDefinedCuisine
   ]);
 
   const searchRestaurant = () => {
@@ -279,47 +381,49 @@ const Offers = () => {
     return (
       <section id="" className="offer-section">
         <div className="offer-container">
-          <div className="offer-row">
-            {/* {(Temparr.length==0?offer:Temparr).slice(0, noOfImgToShow).map((ele, ind) => { */}
-            {(Temparr.length == 0 ? offer : Temparr)
-              .slice(0, showDataCount)
-              .map((ele, ind) => {
-                {
-                  /* {(search==''?offer:(search!=''?searchRestaurant():Temparr.length==0?offer:Temparr)).slice(0, noOfImgToShow).map((ele, ind) => { */
-                }
+          {/* {check?'NO DATA FOUND':<div className="offer-row"> */}
+          {check?<div className="nofound"><img src='https://i.pinimg.com/originals/77/17/fb/7717fbf1f4ea5676ab6c118cb2552a8f.png'/></div>:<div className="offer-row">
 
-                return (
-                  <>
-                    <div
-                      key={ind}
-                      className="offer-column"
-                      onClick={(e) => singleResta(ele.id)}
-                    >
-                      <div className="offer-img">
-                        <img src={ele.image} alt={ele.name} />
-                        <div className="offer-heading">
-                          <h4 className="offer-head">{ele.offerRange}</h4>
-                        </div>
-                      </div>
-                      <div className="offer-content">
-                        <h3>{ele.name}</h3>
-                        <div className="star-icon">
-                          <span>
-                            <FontAwesomeIcon icon={faStar} />
-                          </span>
-                          <h5>{ele.rating}</h5>
-                        </div>
+          {/* {(Temparr.length==0?offer:Temparr).slice(0, noOfImgToShow).map((ele, ind) => { */}
+          {(Temparr.length == 0 ? offer : Temparr)
+            .slice(0, showDataCount)
+            .map((ele, ind) => {
+              {
+                /* {(search==''?offer:(search!=''?searchRestaurant():Temparr.length==0?offer:Temparr)).slice(0, noOfImgToShow).map((ele, ind) => { */
+              }
 
-                        <div className="offer-desc">
-                          <h4>{ele.cuisines}</h4>
-                          <h3>{ele.location}</h3>
-                        </div>
+              return (
+                <>
+                  <div
+                    key={ind}
+                    className="offer-column"
+                    onClick={(e) => singleResta(ele.id)}
+                  >
+                    <div className="offer-img">
+                      <img src={ele.image} alt={ele.name} />
+                      <div className="offer-heading">
+                        <h4 className="offer-head">{ele.offerRange}</h4>
                       </div>
                     </div>
-                  </>
-                );
-              })}
-          </div>
+                    <div className="offer-content">
+                      <h3>{ele.name}</h3>
+                      <div className="star-icon">
+                        <span>
+                          <FontAwesomeIcon icon={faStar} />
+                        </span>
+                        <h5>{ele.rating}</h5>
+                      </div>
+
+                      <div className="offer-desc">
+                        <h4 title={ele.cuisines}>{ele.cuisines}</h4>
+                        <h3>{ele.location}</h3>
+                      </div>
+                    </div>
+                  </div>
+                </>
+              );
+            })}
+        </div>}
           {filterDataShow < Temparr.length ? (
             <div className="showDiv">
               <button onClick={handleFilterShow} className="showbtn">
@@ -334,8 +438,8 @@ const Offers = () => {
           )}
 
           {noOfImgToShow < offer.length && Temparr.length == 0 && (
-            <div className="showDiv">
-              <button onClick={handleImgToShow} className="showbtn">
+           !check&& <div className="showDiv">
+            <button onClick={handleImgToShow} className="showbtn">
                 Show more{" "}
                 <span>
                   <FontAwesomeIcon icon={faChevronDown} />
@@ -353,12 +457,14 @@ const Offers = () => {
       <section className="c-section">
         <div className="c-container">
           <h3>Cuisines near me</h3>
+          {/* {check?<h1>{'no dat found'}</h1>:''} */}
           <div className="c-row">
             {cuisines.slice(0, noOfCuisineToShow).map((ele, ind) => {
               return (
                 <>
                   <div className="c-column">
-                    <button onClick={(e) => handleCuisines(e, ele)}>
+                    <button onClick={() => handleCuisines(ele)}>
+                    {/* <button onClick={()=>updPreDefinedCuisine(ele)} > */}
                       {ele}
                     </button>
                   </div>
@@ -404,14 +510,22 @@ const Offers = () => {
       <>
         <div className={fixednavbar ? "offnavbarblock" : "offernav"}>
           <div className="headitem1">
+          <Link to='/'>
             <div>
               <img
-                src="https://seeklogo.com/images/S/swiggy-logo-8EF8260FA4-seeklogo.com.png"
-                style={{ width: 28 }}
-              />
-            </div>
+                // src="https://seeklogo.com/images/S/swiggy-logo-8EF8260FA4-seeklogo.com.png"
+                // src="https://logos.flamingtext.com/Word-Logos/food-design-china-name.png"
+                src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c0/Eo_circle_orange_letter-f.svg/1200px-Eo_circle_orange_letter-f.svg.png"
+                // style={{ width: 28 }}
 
-            <div className="swiggyletter">Swiggy</div>
+                 style={{ width: '63px',height: '52px'}}
+/>
+            </div>
+            </Link>
+   
+            {/* <div className="swiggyletter">Swiggy</div> */}
+            <div className="swiggyletter">Food</div>
+
           </div>
 
           <div className="headitem2">
@@ -433,10 +547,11 @@ const Offers = () => {
                 Search for restaurant and food
               </div>
               <div className="searchicon">
-                <img
+                {/* <img
                   src="https://img.uxwing.com/wp-content/themes/uxwing/download/user-interface/search-icon.png"
                   style={{ width: 20 }}
-                />
+                /> */}
+                <span><SearchRoundedIcon/>  </span>
               </div>
             </button>
           </div>
@@ -466,8 +581,8 @@ const Offers = () => {
     return (
       <>
         <div className="offerpage">
-          <div>Home/offers</div>
-          <div className="offerline">Restaurants with great offers near me</div>
+          <div><Link to='/' style={{textDecoration: "none",color: '#000000'}}>Home</Link>/offers{preDefinedCuisine!==''&&`/${preDefinedCuisine}`}</div>
+          <div className="offerline">{preDefinedCuisine!==''&&`Best ${preDefinedCuisine}`} Restaurants {preDefinedCuisine==''&&'with great offers'} near me</div>
           <br />
 
           <div className={fixednavbar ? "secondnavbarfix" : "secondnavbar"}>

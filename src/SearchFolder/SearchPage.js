@@ -1,9 +1,10 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
 import "./SearhDesign.css";
+import SearchRoundedIcon from '@mui/icons-material/SearchRounded';
 
 const SearchPage = () => {
-  const [search, setSearch] = useState(null);
+  const [search, setSearch] = useState('');
   const [dat, setDat] = useState([]);
   const [respData, updData] = useState([]);
   const [check, setCheck] = useState(false);
@@ -34,8 +35,10 @@ const SearchPage = () => {
       updData(filtersearch);
     }
   }, [search]);
-  const handleCircle = (item) => {
-    setSearch(item);
+  const  handleCircle = (item) => {
+    setSearch(prestate=>item)
+    // console.log("search",search)
+    // console.log("item",item)
   };
   /* const searchRestaurant=()=>{
      let filtersearch=dat.filter((item)=>{
@@ -53,7 +56,9 @@ const SearchPage = () => {
   
   } */
   const handleChange = (e) => {
-    setSearch(e.target.value);
+    const name=e.target.value
+    setSearch(prevstate=>name);
+    // console.log("searchhhhhh",search)
   };
 
   const cardItem = () => {
@@ -61,8 +66,11 @@ const SearchPage = () => {
     return (
       <section id="" className="offer-section ">
         <div className="offer-container">
-          {respData.length == 0 ? (
-            <div></div>
+          {respData.length == 0 ? ((search !== '' ) &&
+            <div style={{display:'flex',justifyContent:'center',marginBottom:'10px'}}>
+              {/* <img src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTLvwDG8njgqyuTaqo4hD8wsrNhga--OYGHGbnvCtFQ0-SV4YTwiyBULl1Qq66LuGiMxnU&usqp=CAU'/> */}
+              <img src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTx-IWZyD_Nm6PWsdDzY8cerKQTmdplpLJfsw&usqp=CAU'/>
+            </div>
           ) : (
             <div className="offer-row">
               {(respData.length !== 0 && respData).map((ele, ind) => {
@@ -103,6 +111,7 @@ const SearchPage = () => {
 
   return (
     <>
+    <div className='search-content'>
       <div className="srcbtndiv">
         <button className="searcbtn">
           <div className="sercbrletter">
@@ -112,94 +121,68 @@ const SearchPage = () => {
               value={search}
             />
           </div>
-          <div className="searcicon">
-            <img
+          
+           <span className="searcicon">
+            {/* <img
               src="https://img.uxwing.com/wp-content/themes/uxwing/download/user-interface/search-icon.png"
               style={{ width: 20 }}
-            />
-          </div>
+            /> */}
+            <SearchRoundedIcon/>
+          </span>
         </button>
       </div>
 
       <div>
         <h2 className="headercuisine">Popular Cuisines</h2>
-      </div>
+      </div>  
 
       <div className="searcimages">
-        <li>
+        {/* <li>
           {" "}
           <img
             className="img1"
             src="https://www.cookwithnabeela.com/wp-content/uploads/2023/03/MuttonBiryani.webp"
           />
           <h5>Biryani</h5>
+        </li> */}
+        <li onClick={()=>handleCircle("biryani")}> <img  className='img1' src= "https://www.cookwithnabeela.com/wp-content/uploads/2023/03/MuttonBiryani.webp" /><h5 className="dish">Biryani</h5></li>
+        <li onClick={()=>handleCircle("rolls")}><img className="img1"src="https://twoplaidaprons.com/wp-content/uploads/2022/08/Vietnamese-egg-rolls-on-plate-stacked-thumbnail.jpg" />
+        <h5 className="dish">Rolls</h5></li>
+        <li onClick={()=>handleCircle("pizzas")}>
+          <img className="img1" src="https://img.onmanorama.com/content/dam/mm/en/food/features/images/2021/10/17/pizza.jpg.transform/schema-16x9/image.jpg" />
+          <h5 className="dish">Pizzas</h5>
         </li>
-        {/* <li> <img  className='img1' src= "https://www.cookwithnabeela.com/wp-content/uploads/2023/03/MuttonBiryani.webp" /><div onClick={()=>handleCircle("Biryani")}>Biryani</div></li> */}
-        <li>
-          <img
-            className="img1"
-            src="https://twoplaidaprons.com/wp-content/uploads/2022/08/Vietnamese-egg-rolls-on-plate-stacked-thumbnail.jpg"
-          />
-          <h5>Rolls</h5>
+        <li onClick={()=>handleCircle("tea")}>
+          <img className="img1" src="https://www.vegrecipesofindia.com/wp-content/uploads/2021/09/masala-chai-2.jpg "/>
+          <h5 className="dish">Tea</h5>
         </li>
-        <li>
-          <img
-            className="img1"
-            src="https://img.onmanorama.com/content/dam/mm/en/food/features/images/2021/10/17/pizza.jpg.transform/schema-16x9/image.jpg"
-          />
-          <h5>Pizzas</h5>
-        </li>
-        <li>
-          <img
-            className="img1"
-            src="https://www.vegrecipesofindia.com/wp-content/uploads/2021/09/masala-chai-2.jpg "
-          />
-          <h5>Tea</h5>
-        </li>
-        <li>
-          <img
-            className="img1"
-            src=" https://kohinoor-joy.com/wp-content/uploads/2020/01/indo-chinese-food.jpg"
-          />
+        <li onClick={()=>handleCircle("chinese")}>
+          <img className="img1"   src=" https://kohinoor-joy.com/wp-content/uploads/2020/01/indo-chinese-food.jpg"/>
           <h5>Chinese</h5>
         </li>
-        <li>
-          <img
-            className="img1"
-            src="https://www.chicken.ca/wp-content/uploads/2013/05/Moist-Chicken-Burgers.jpg "
-          />
-          <h5>Burger</h5>
+        <li onClick={()=>handleCircle("burger")}>
+          <img  className="img1"    src="https://www.chicken.ca/wp-content/uploads/2013/05/Moist-Chicken-Burgers.jpg "    />
+          <h5 className="dish">Burger</h5>
         </li>
-        <li>
-          <img
-            className="img1"
-            src=" https://sallysbakingaddiction.com/wp-content/uploads/2013/04/triple-chocolate-cake-4.jpg"
-          />
-          <h5>Cake</h5>
+        <li onClick={()=>handleCircle("cake")}>
+          <img  className="img1" src=" https://sallysbakingaddiction.com/wp-content/uploads/2013/04/triple-chocolate-cake-4.jpg"  />
+          <h5 className="dish">Cake</h5>
         </li>
-        <li>
-          <img
-            className="img1"
-            src=" https://www.hersheyland.com/content/dam/hersheyland/en-us/recipes/recipe-images/366-chocolate-dessert-waffles.jpg "
-          />
-          <h5>Desserts</h5>
+        <li onClick={()=>handleCircle("desserts")}>
+          <img  className="img1"    src=" https://www.hersheyland.com/content/dam/hersheyland/en-us/recipes/recipe-images/366-chocolate-dessert-waffles.jpg " />
+          <h5 className="dish">Desserts</h5>
         </li>
-        <li>
-          <img
-            className="img1"
-            src=" https://s3-ap-south-1.amazonaws.com/betterbutterbucket-silver/chitra-sendhil1453210035569e39b33b9db.jpeg "
-          />
+        <li onClick={()=>handleCircle("north indian")}>
+          <img className="img1"    src=" https://s3-ap-south-1.amazonaws.com/betterbutterbucket-silver/chitra-sendhil1453210035569e39b33b9db.jpeg "   />
           <h5>North Indian</h5>
         </li>
-        <li>
-          <img
-            className="img1"
-            src="https://sukhis.com/app/uploads/2022/04/image3-4.jpg "
-          />
-          <h5>South Indian</h5>
+        <li onClick={()=>handleCircle("south indian")}>
+          <img    className="img1"    src="https://sukhis.com/app/uploads/2022/04/image3-4.jpg "  />
+          <h5 className="dish"> South Indian</h5>
         </li>
       </div>
       {cardItem()}
+      </div>
     </>
   );
 };
