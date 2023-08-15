@@ -234,7 +234,7 @@ const Cart = (props) => {
 
     var Total = 0;
 
-    cartList&&cartList.forEach((element) => {
+    cartList && cartList.forEach((element) => {
 
         Total += Number(element.item.price)
 
@@ -255,7 +255,7 @@ const Cart = (props) => {
 
     const itemTotal = () => {
         let total = 0;
-      cartList&&  cartList.forEach((element) => {
+        cartList && cartList.forEach((element) => {
 
             total += Number(element.item.price);
             // console.log(typeof (total), "total")
@@ -391,7 +391,7 @@ const Cart = (props) => {
                                         <div className="sign-in-btns">
                                             <button className="signin-btn1"> <div style={{ fontSize: "13px" }}>Have an account?</div>
                                                 <div style={{ fontSize: "14px", fontWeight: "600" }}>LOG IN</div></button>
-                                            <button onClick={formSubmission} className="signin-btn2"><div style={{ fontSize: "13px" }}>New to Swiggy?</div>
+                                            <button onClick={formSubmission} className="signin-btn2"><div style={{ fontSize: "13px" }}>New to Frisp?</div>
                                                 <div style={{ fontSize: "14px", fontWeight: "600" }}>SIGN UP</div></button>
                                         </div>
                                         {form && <div className="form">
@@ -428,8 +428,8 @@ const Cart = (props) => {
                         </div>
                     </div>
                     {/* {myArray.length === 0 || num > 1 ? (<div className="ttlheight"><div className="right"> */}
-                    
-                    {cartList.length === 0 || num < 1 ||true? (<div className="ttlheight"><div className="right">
+
+                    {cartList.length === 0 || num < 1 ? (<div className="ttlheight"><div className="right">
 
                         <div className="cart">Cart Empty</div>
                         <img className="rt-img" src="https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_480/Cart_empty_-_menu_2x_ejjkf2" />
@@ -526,7 +526,7 @@ const Cart = (props) => {
                 </div>
 
             </div>
-           
+
             <div>
 
             </div>

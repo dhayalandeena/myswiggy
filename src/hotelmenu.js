@@ -9,6 +9,7 @@ import { FiChevronDown, FiChevronUp } from 'react-icons/fi';
 import { faUtensils } from '@fortawesome/free-solid-svg-icons';
 import { useParams } from 'react-router-dom';
 import { useNavigate, Link } from "react-router-dom";
+import AddShoppingCartIcon from '@mui/icons-material/AddShoppingCart';
 
 
 const HotelMenuComponent = () => {
@@ -27,6 +28,8 @@ const HotelMenuComponent = () => {
     const [dummyData, upData] = useState([{ id: 1, name: 'rrrr' }, { id: 2, name: 'jljhhi' }, { id: 3, name: 'rrrr' }])
     const [foods, setFoods] = useState([])
     const [num, setNum] = useState(1)
+    const [search, setSearch] = useState(false)
+    const [placeHolder, setPlaceHolder] = useState("")
 
 
     const food = { id: 1, name: 'idly' }
@@ -95,6 +98,9 @@ const HotelMenuComponent = () => {
     const foodleNavigate = (id) => {
         navigate(`/cart/${fid}`);
     };
+    const handleSearch = () => {
+        setSearch(!search)
+    }
     { /*const handleAdd = (element, item) => {
         console.log('idly,item', element)
         setFoods([...foods, { item: item, element: element }])
@@ -123,8 +129,22 @@ const HotelMenuComponent = () => {
                 console.error("Error:", error);
             });
     }, []);
+    const hotelName = () => {
 
+        let name = "Search in "
+        array2.map((element) => {
+            name += element.name
+            console.log(name, "sibi")
+        })
+        console.log(name, "sibi")
+        console.log("sibi", array2)
+        return name
+    }
 
+    useEffect(() => {
+        const name = hotelName;
+        setPlaceHolder(name)
+    })
 
 
 
@@ -132,7 +152,10 @@ const HotelMenuComponent = () => {
     return (
         <>
             {/* <a onClick={handleNavigate}>cartPage</a> */}
-            <Link to={{ pathname: `/cart/` }} state={foods}>go TO CART PAGE</Link>
+            <header className="cartheader">
+                <div ><div className="cartdiv1"><div className="foodcart"> <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c0/Eo_circle_orange_letter-f.svg/1200px-Eo_circle_orange_letter-f.svg.png" /></div><div className="cartspan"><span>Chennai,Velacherry AGSColony </span></div>
+                    <div className="linkdiv"><span><Link className="cartlink" to={{ pathname: `/cart/` }} state={foods}><AddShoppingCartIcon /> CART </Link></span></div></div>
+                </div></header>
             {/* <Link to={{ pathname: `/cart/`, state: { foods, array2 } }} >go TO CART PAGE</Link> */}
 
             {overlay && <div className="overlay" onClick={() => setOverlay(false)}> <div className="box">
@@ -264,9 +287,9 @@ const HotelMenuComponent = () => {
 
 
                             <div className="maindiv" key={index}>
-                                <a onClick={() => handleNavigate(() => element.id)}>cartPage</a>
 
-                                <div className="addressdiv">
+
+                                {!search && <div className="addressdiv">
                                     <a className="anchor1"><span className="">Home</span></a>
                                     <span className="slash">/</span>
                                     <a className="anchor1"><span className="">Chennai</span></a>
@@ -275,10 +298,27 @@ const HotelMenuComponent = () => {
                                     {/* <button className="search">
                                         <span className="searchsymbol"> <FontAwesomeIcon icon={faSearch} /></span>
                         </button>*/}
-                                </div>
-                                <button className="search">
+                                </div>}
+                                {!search && <button onClick={handleSearch} className="search">
                                     <span className="searchsymbol"> <FontAwesomeIcon icon={faSearch} /></span>
-                                </button>
+                                </button>}
+                                {search && <div className="searchbar">
+                                    <div className="searchbar2">
+                                        <button className="searchbtn" onClick={handleSearch}>
+                                            <svg className="btnsvg">
+                                                <path d="M3.333 14.984l28.667-0v2.097l-0.16 0.006h-28.506l-0.16-0.16v-1.782l0.16-0.16zM1.114 14.986l10.079-10.079 0.121-0.108 1.465 1.467-0.101 0.127-10.079 10.079h-0.226l-1.26-1.26v-0.226zM12.679 25.676l0.108 0.117-1.468 1.484-0.126-0.115-10.079-10.079v-0.226l1.26-1.26h0.226l10.079 10.079zM3.268 12.87l0.272 0.116-0.022 6.125-0.272 0.114-3.245-3.18 0.111-0.112 3.157-3.062z"></path>
+                                            </svg>
+                                        </button>
+                                        <div className="inpdiv">
+                                            <input placeholder={placeHolder} className="inputsearch"></input>
+
+                                        </div>
+                                        <div className="insidesearch">
+                                            <span> <span className="searchsymbol"> <FontAwesomeIcon icon={faSearch} /></span></span>
+                                        </div>
+                                    </div>
+
+                                </div>}
                                 <div className="cusinesdiv">
                                     <div className="cusinecontent">
                                         <div className="address">

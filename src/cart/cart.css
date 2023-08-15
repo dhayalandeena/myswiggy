@@ -59,6 +59,7 @@
     margin: auto;
     margin-top: 31px;
     padding-bottom: 125px;
+    padding-top: 20px;
 }
 .left{
     flex: 1;

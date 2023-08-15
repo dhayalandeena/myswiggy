@@ -37,11 +37,7 @@ p {
 .slash{
     color: inherit;
 }
-.hotelname{
-    margin: 0 5px;
-    color: #535665;
-    font-weight: 400;
-}
+
 .search{
     position: absolute;
     right: 0;
@@ -49,6 +45,60 @@ p {
     background-color: transparent;
     font-size: 18px;
     padding: 0 12px;
+}
+.searchbar{
+  border-bottom: 1px solid #e9e9eb;
+  position: sticky;
+  top: 0;
+  z-index: 2;
+  height: 52px;
+  background-color: #fff;
+}
+.searchbar2{
+  display: flex;
+  align-items: center;
+  height: 52px;
+  width: 100%;
+  padding-right: 16px;
+  justify-content: center;
+}
+.searchbtn{
+  padding: 16px;
+  font-weight: 600;
+  position: relative;
+  line-height: 0;
+  overflow: hidden;
+}
+.btnsvg{
+  stroke-width: 0;
+    stroke: currentColor;
+    width: 20px;
+    height: 30px;
+    fill: #3d4152;
+    vertical-align: middle;
+}
+.inpdiv{
+  flex: 1;
+  min-height: 0;
+  padding-left: 4px;
+}
+.inputsearch{
+  font-size: 1.1rem;
+    line-height: 20px;
+    width: 100%;
+    height: 100%;
+    outline: 0;
+    border: none;
+    overflow: hidden;
+    font-family: inherit;
+    color: inherit;
+    background: inherit;
+    vertical-align: middle;
+}
+.insidesearch{
+  color: #686b78;
+  font-size: 18px;
+  height: 18px;
 }
 button{
     border: none;
@@ -208,6 +258,37 @@ button{
     letter-spacing: -1px;
 
 
+}
+.cartheader{
+  box-shadow: 0 15px 40px -20px rgba(40,44,63,.15);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 55px;
+  background-color: #fff;
+  z-index: 1000;
+
+}
+.cartlink{
+  text-decoration: none;
+
+}
+.cartdiv1{
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+}
+.foodcart img{
+  width: 51px;
+  cursor: pointer;
+}
+.cartspan{
+  margin-left: 20px;
+}
+.linkdiv{
+  margin-left: 20px;
 }
 .overlay{
     position: fixed;
